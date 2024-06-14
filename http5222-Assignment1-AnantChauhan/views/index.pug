@@ -1,0 +1,24 @@
+extends common/layout
+
+block layout-content
+  .hero-section.text-center
+    .container
+      .row
+        .col-md-12.justify-content-center.d-flex
+          .hero-content.text-center.bg-dark.text-light.p-4.w-50.rounded-5
+            h1 Welcome to Our Toy Store
+            p.lead Discover the best toys for all ages and enjoy endless fun!
+  
+  .main-content.container
+    h1.page-title.mb-4 Products
+    .row
+      each toy in toys
+        .col-md-4.mb-3
+          .card
+            img.card-img-top(src=toy.imageUrl alt=toy.name)
+            .card-body
+              h5.card-title= toy.name
+              p.card-text Brand: #{toy.brand}
+              p.card-text Year: #{toy.year}
+              p.card-text Rating: #{toy.rating}
+              p.card-text Price: $#{toy.price}

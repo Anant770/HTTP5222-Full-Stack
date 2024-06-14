@@ -1,0 +1,33 @@
+extends common/layout
+
+block layout-content
+  .hero-section.text-center
+    .container
+      .row
+        .col-md-12.justify-content-center.d-flex
+          .hero-content.text-center.bg-dark.text-light.p-4.w-50.rounded-5
+            h1.page-title Add a New Toy
+  .container.my-5
+    .row
+      form.my-5(action="/admin/create/submit" method="post" class="row g-3")
+        .col-md-6
+          label(for="name" class="form-label") Toy Name
+          input#name.form-control(type="text" name="name" required)
+        .col-md-6
+          label(for="brand" class="form-label") Brand
+          input#brand.form-control(type="text" name="brand" required)
+        .col-md-6
+          label(for="year" class="form-label") Year
+          input#year.form-control(type="number" name="year" required)
+        .col-md-6
+          label(for="rating" class="form-label") Rating
+          input#rating.form-control(type="number" step="0.1" name="rating" required)
+        .col-md-6
+          label(for="price" class="form-label") Price
+          input#price.form-control(type="number" step="0.01" name="price" required)
+        .col-md-6
+          label(for="image" class="form-label") Image URL
+          input#image.form-control(type="url" name="image" required)
+        .col-12
+          button(type="submit" class="btn btn-primary") Add Toy
+

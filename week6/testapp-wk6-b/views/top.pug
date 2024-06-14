@@ -1,0 +1,14 @@
+extends layout 
+block main-content 
+    h1 top 15 most watched shows 
+    table(style='width=100%', border='1')
+        thead 
+            tr 
+                th show Title
+                th Year 
+        tbody 
+            each show in shows 
+                tr  
+                    td 
+                        a(href=`https://imdb.com/title/${show.show.ids.imdb}`) #{show.show.title}
+                    td #{show.show.year}

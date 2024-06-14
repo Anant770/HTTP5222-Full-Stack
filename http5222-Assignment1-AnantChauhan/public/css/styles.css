@@ -1,0 +1,41 @@
+.hero-section {
+    background: url('/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p.lead {
+    font-size: 1.25rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .dropdown-menu {
+        font-size: 0.9rem;
+    }
+}
