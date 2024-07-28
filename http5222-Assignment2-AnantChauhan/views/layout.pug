@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title} | WeatherMusic
+    link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header#header 
+      .header-content   
+        h2#site-name 
+          a(href="/") &#9729; WeatherMusic &#127925;
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Anant Chauhan, 2024.
