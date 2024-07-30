@@ -1,6 +1,6 @@
 # WeatherMusic
 
-WeatherMusic is a Node.js web application that suggests Spotify playlists based on the current weather conditions in a specified city. Enter a city name, and WeatherMusic will provide you with the current weather information and a playlist that matches the weather condition!
+WeatherMusic is a Node.js web application that suggests Spotify playlists based on the current weather conditions in a specified city. Enter a city name, and WeatherMusic will provide you with the current weather information and a playlist that matches the weather conditions!
 
 ## Features
 
@@ -65,5 +65,5 @@ PORT=3000
 
 ## API
 
--WeatherAPI: Used for fetching the current weather data for the specified city. Learn more at https://www.weatherapi.com/.
--Spotify API: Used for searching and retrieving playlists based on the current weather. Learn more at https://developer.spotify.com/documentation/web-api.
+WeatherAPI: Used for fetching the current weather data for the specified city. Learn more at https://www.weatherapi.com/.
+Spotify API: Used for searching and retrieving playlists based on the current weather. Learn more at https://developer.spotify.com/documentation/web-api.
