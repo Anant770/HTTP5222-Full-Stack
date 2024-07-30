@@ -1,9 +1,8 @@
 extends layout 
 
 block main-content 
-
   h1.page-title Welcome to WeatherMusic
-  h2 Play Weather-Inspired songs! 
+  h2.page-subtitle Play Weather-Inspired songs!
   div.form-container
     form(action="/weather" method="GET")
       label(for="city") Enter a city:
@@ -11,8 +10,8 @@ block main-content
       button(type="submit") Get Weather
 
   div#howto 
-  h2 How to Use
-  ol
-    li Enter any city name in the input field above.
-    li Click on the "Get Weather" button to get the current temperature and weather for the entered city.
-    li Based on the weather, the website will suggest a playlist on Spotify that matches the current weather.
+    h2.page-subtitle How to Use
+    ol
+      li Enter any city name in the input field above.
+      li Click on the "Get Weather" button to get the current temperature and weather for the entered city.
+      li Based on the weather, the website will suggest a playlist on Spotify that matches the current weather.
