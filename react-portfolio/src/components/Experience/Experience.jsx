@@ -28,7 +28,7 @@ export const Experience = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await fetch("http://localhost:8888/api/history");
+        const response = await fetch("/api/history");
         if (!response.ok) {
           throw new Error("Failed to fetch history data");
         }

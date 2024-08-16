@@ -8,7 +8,7 @@ export const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:8888/api/project");
+        const response = await fetch("/api/project");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
